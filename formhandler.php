@@ -1,6 +1,6 @@
 <?php
     $classID = $_POST["classID"];
-	$email = $_POST["email"];
+	$email = $_POST["netid"];
     mysql_connect("localhost","root","root");
 	mysql_select_db("latebell");
 	
@@ -28,15 +28,15 @@
 		}
 	}
 	
-	$insertEmail = "INSERT INTO emails 
-	(email, classID)
+	$insertNetID = "INSERT INTO netids 
+	(netid, classID)
 	VALUES
-	('$email', '$classID')";  				
-	$result = mysql_query($insertEmail);
+	('$netid', '$classID')";  				
+	$result = mysql_query($insertNetID);
 	if($result){
-		echo("<br>Input data is succeed (email)");
+		echo("<br>Input data is succeed (netid)");
 	} else{
-		echo("<br>Input data is fail (email)");
+		echo("<br>Input data is fail (netid)");
 	}
 	
 ?>

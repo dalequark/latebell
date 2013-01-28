@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Late Bell!</title>
+		<meta name="description" content="" />
+		<meta name="author" content="Dale Markowitz" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script type="text/javascript" src="formvalidation.js"></script>
+
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="span10 offset2">
+				<div id="banner" class="hero-unit">
+					<h1>Welcome to Late Bell!</h1>
+					<p>Never miss a class again.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="span10 offset2">
+					<div class="alert" id="errormessage">
+				    <button type="button" class="close" data-dismiss="alert">&times;</button>
+				    <strong>Warning!</strong> Best check yo self, you're not looking too good.
+    			</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4 offset4">
+					<form onsubmit="return validateForm()" action="formhandler.php" method="post" class="form-horizontal" name="myForm">
+						 
+						 <div class="control-group">
+							<label for="classID" class="control-label">class ID</label>
+							<div class="controls">
+							 	<input type="text" name="classID">
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<label for="netid" class="control-label">Net ID</label>
+							<div class="controls">
+								<input type="text" name="netid">
+							</div>
+						</div>
+						
+						<div class="control-group">
+							<div class="controls">
+								<input class="btn" type="submit" value="submit">
+							</div>
+						</div>
+						
+					</form>
+			</div>
+		</div>
+	</body>
+</html>
