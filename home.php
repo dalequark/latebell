@@ -1,64 +1,57 @@
-
-<?php
+<?php /*
 
 //
 // phpCAS simple client
 //
 
 // import phpCAS lib
-include_once('CAS.php');
-
- 
+include_once ('scripts/CAS.php');
 
 phpCAS::setDebug();
 
- 
-
 // initialize phpCAS
-phpCAS::client(CAS_VERSION_2_0,'fed.princeton.edu',443,'cas');
-
- 
+phpCAS::client(CAS_VERSION_2_0, 'fed.princeton.edu', 443, 'cas');
 
 // no SSL validation for the CAS server
 phpCAS::setNoCasServerValidation();
 
- 
-
 // force CAS authentication
 phpCAS::forceAuthentication();
-
- 
 
 // at this step, the user has been authenticated by the CAS server
 // and the user's login name can be read with phpCAS::getUser().
 
 // logout if desired
 if (isset($_REQUEST['logout'])) {
- phpCAS::logout();
+	phpCAS::logout();
 }
 
-echo phpCAS::getUser();
+$netid = phpCAS::getUser();
 
 // for this test, simply print that the authentication was successful
+ 
+ */
+ $netid = 'damarkow';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Course List</title>
+		<title charset="UTF-8">cl&#228sshunter</title>
 		<meta name="author" content="RustyDroid" />
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="style.css">
 		<script src="scripts/jquery_library.js"></script>
 	</head>
 	<body>
+		<div id="netid"><?php echo $netid ?></div>
 		<div class="row-fluid">
 			<div class="span2"></div>
 			<div class="span8">
 				<div class="hero-unit" id="banner">
 					<h1 charset="UTF-8">cl&#228sshunter</h1>
 					<p>
-						Start hunting classes, <strong id="netid"></strong>!
+						Start hunting classes, <?php echo $netid ?>!
 					</p>
 				</div>
 			</div>
@@ -90,26 +83,22 @@ echo phpCAS::getUser();
 							<th><strong>Enrollment</strong></th>
 						</tr>
 					</thead>
-					<tbody id="classTable">
-					</tbody>
+					<tbody id="classTable"></tbody>
 				</table>
 			</div>
 			<div class="span2"></div>
 		</div>
 		<div class="row-fluid">
-			<div class="span5"></div>
-			<div class="span2">
-				<button class="btn btn-large" onclick="submit()">Submit</button>
+			<div class="span4"></div>
+			<div class="span3 offset1">
+				<button class="btn btn-large" onclick="submit()">
+					Submit
+				</button><a href="?logout=">
+		<button class="btn btn-large">Logout</button>
+ 			</a>
 			</div>
-			<div class="span5"></div>
+			<div class="span4"></div>
 		</div>
-		<div class="row-fluid">
-			<div class="span5"></div>
-			<div class="span2">
-				<button class="btn btn-large" href="scripts/validate.php?logout=">Logout</button>
-			</div>
-			<div class="span5"></div>
-		</div>
-	<script src="scripts/home.js"></script>
+		<script src="scripts/home.js"></script>
 	</body>
 </html>

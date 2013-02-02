@@ -33,10 +33,20 @@ phpCAS::forceAuthentication();
 // and the user's login name can be read with phpCAS::getUser().
 
 // logout if desired
-if (isset($_RESULT['logout'])) {
- 	phpCAS::logout();
+if (isset($_REQUEST['logout'])) {
+ phpCAS::logout();
 }
 
-echo phpCAS::getUser();
-
+// for this test, simply print that the authentication was successful
 ?>
+<html>
+  <head>
+    <title>phpCAS simple client</title>
+  </head>
+  <body>
+    <h1>Successfull Authentication!</h1>
+    <p>the user's login is <b><?php echo phpCAS::getUser(); ?></b>.</p>
+    <p>phpCAS version is <b><?php echo phpCAS::getVersion(); ?></b>.</p>
+    <p><a href="?logout=">Logout</a></p>
+  </body>
+</html>

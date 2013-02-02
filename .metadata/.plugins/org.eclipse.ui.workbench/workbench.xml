@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="22" version="2.0">
+<workbench progressCount="42" version="2.0">
 <workbenchAdvisor/>
-<window height="683" width="1200" x="63" y="22">
+<window height="678" width="1280" x="88" y="38">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,6 +10,8 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="106" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.python.pydev.debug.actionSet" itemType="typeToolBarContribution" x="54" y="22"/>
+<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="32" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="114" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="68" y="22"/>
 <coolItem id="com.aptana.ui.globalActionSet" itemType="typeToolBarContribution" x="150" y="22"/>
@@ -17,7 +19,9 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="70" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.js" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.css" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.aptana.editor.php" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,24 +39,43 @@
 </folder>
 </info>
 </editorArea>
-<editor id="com.aptana.editor.php" name="formhandler.php" partName="formhandler.php" title="formhandler.php" tooltip="/Applications/MAMP/htdocs/latebell/formhandler.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/formhandler.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="320" selectionTopPixel="0"/>
+<editor id="com.aptana.editor.css" name="style.css" partName="style.css" title="style.css" tooltip="/Applications/MAMP/htdocs/latebell/style.css" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/style.css"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="134" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.html" name="form.html" partName="form.html" title="form.html" tooltip="/Applications/MAMP/htdocs/latebell/form.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/form.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="683" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="com.aptana.editor.php" name="serverScraper.php" partName="serverScraper.php" title="serverScraper.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/serverScraper.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/scripts/serverScraper.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="659" selectionTopPixel="60"/>
 </editor>
-<editor activePart="true" focus="true" id="com.aptana.editor.php" name="scraper.php" partName="scraper.php" title="scraper.php" tooltip="/Applications/MAMP/htdocs/latebell/scraper.php" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/scraper.php"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="186" selectionTopPixel="0"/>
+<editor id="com.aptana.editor.php" name="scraper.php" partName="scraper.php" title="scraper.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/scraper.php" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/Applications/MAMP/htdocs/latebell/scripts/scraper.php"/>
+<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="524" selectionTopPixel="380"/>
 </editor>
 </editors>
 <views>
+<view id="com.aptana.terminal.views.terminal" partName="Terminal">
+<viewState>
+<title>Terminal</title>
+<workingDirectory>/Users/Dale</workingDirectory>
+</viewState>
+</view>
+<view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="com.aptana.explorer.view" partName="App Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled=""/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer"/>
 <view id="com.aptana.snippets.ui.views.SnippetsView" partName="Snippets"/>
-<view id="com.aptana.terminal.views.terminal" partName="Terminal"/>
-<view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -63,18 +86,13 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
+<view id="com.aptana.js.debug.ui.scriptsView" partName="Loaded Scripts"/>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled=""/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
 </views>
 <perspectives activePart="com.aptana.editor.php" activePerspective="com.aptana.ui.WebPerspective">
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="com.aptana.browser.actionSet"/>
 <alwaysOnActionSet id="com.aptana.ruby.debug.ui.RubyDebugActionSet"/>
@@ -113,36 +131,26 @@
 <new_wizard_action id="org.radrails.rails.ui.projectWizard"/>
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="terminalArea" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
-<fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-<view id="com.aptana.terminal.views.terminal" ratio="0.3"/>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@118317f" orientation="256" selectedTabId="org.eclipse.ui.views.ContentOutline" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
-<view id="com.aptana.samples.ui.SamplesView" ratio="0.3"/>
-<view id="com.aptana.snippets.ui.views.SnippetsView" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="com.aptana.explorer.view" style="1">
-<fastViews>
-<view id="com.aptana.explorer.view" ratio="0.3"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="com.aptana.explorer.view"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.aptana.terminal.views.terminal"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.aptana.samples.ui.SamplesView"/>
+<view id="com.aptana.snippets.ui.views.SnippetsView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="0">
-<page content="com.aptana.explorer.view" label="LabelNotFound"/>
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<folder activePageID="com.aptana.explorer.view" appearance="2" expanded="2">
+<page content="com.aptana.explorer.view" label="App Explorer"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="left">
@@ -153,22 +161,130 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="left"/>
-<info folder="true" part="terminalArea" ratio="0.74920636" ratioLeft="472" ratioRight="158" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
+<info folder="true" part="terminalArea" ratio="0.73578596" ratioLeft="440" ratioRight="158" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.aptana.terminal.views.terminal" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.aptana.terminal.views.terminal" label="Terminal"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@118317f" ratio="0.74920636" ratioLeft="472" ratioRight="158" relationship="4" relative="left">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<page content="com.aptana.samples.ui.SamplesView" label="LabelNotFound"/>
-<page content="com.aptana.snippets.ui.views.SnippetsView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="com.aptana.samples.ui.SamplesView" label="Samples"/>
+<page content="com.aptana.snippets.ui.views.SnippetsView" label="Snippets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="com.aptana.browser.actionSet"/>
+<alwaysOnActionSet id="com.aptana.ruby.debug.ui.RubyDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="com.aptana.js.debug.ui.actionSet"/>
+<alwaysOnActionSet id="com.aptana.terminal.actionSet"/>
+<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
+<alwaysOnActionSet id="com.python.pydev.debug.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.python.pydev.exceptionBreakpoints"/>
+<alwaysOnActionSet id="org.python.pydev.pyPropertyTrace"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.aptana.js.debug.ui.scriptsView"/>
+<show_view_action id="com.aptana.js.debug.ui.AJAXMonitorView"/>
+<show_view_action id="com.aptana.ruby.debug.ui.DisplayView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<perspective_action id="com.aptana.ui.WebPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="com.aptana.js.debug.ui.scriptsView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.74959874" ratioLeft="934" ratioRight="312" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74875206" ratioLeft="450" ratioRight="151" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="com.aptana.ruby.debug.ui.DisplayView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4488889" ratioLeft="202" ratioRight="248" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74959874" ratioLeft="934" ratioRight="312" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="623" ratioRight="623" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="com.aptana.js.debug.ui.scriptsView" label="Loaded Scripts"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </mainWindow>
@@ -178,120 +294,165 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" uri="file:/Applications/MAMP/htdocs/latebell/form.html"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/formhandler.php"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scraper.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" uri="file:/Applications/MAMP/htdocs/latebell/scripts/home.js"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/submit.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/validate.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/casexample.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/home.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.css" uri="file:/Applications/MAMP/htdocs/latebell/style.css"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/loaddata.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/serverScraper.php"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" uri="file:/Applications/MAMP/htdocs/latebell/scripts/scraper.php"/>
 </editors>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="683" y="0"/>
+<item historyLabel="casexample.php" index="3">
+<position info="not_deleted" x="891" y="37"/>
 </item>
-<item historyLabel="formhandler.php" index="1">
+<item historyLabel="home.js" index="0">
 <position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="21" y="0"/>
-</item>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="66" y="0"/>
-</item>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="860" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="860" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
+<item historyLabel="home.php" index="4">
 <position/>
 </item>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="860" y="0"/>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="1206" y="0"/>
 </item>
-<item historyLabel="formhandler.php" index="1">
+<item historyLabel="casexample.php" index="3">
+<position info="not_deleted" x="891" y="37"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="577" y="0"/>
+</item>
+<item historyLabel="casexample.php" index="3">
+<position info="not_deleted" x="891" y="37"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="577" y="0"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="970" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="126" y="0"/>
+</item>
+<item historyLabel="style.css" index="5">
+<position info="not_deleted" x="114" y="0"/>
+</item>
+<item historyLabel="style.css" index="5">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="5348" y="0"/>
+</item>
+<item historyLabel="loaddata.php" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="5884" y="8"/>
+</item>
+<item historyLabel="loaddata.php" index="6">
+<position info="not_deleted" x="751" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="validate.php" index="2">
+<position info="not_deleted" x="59" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="8782" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="5610" y="0"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="2194" y="0"/>
+</item>
+<item historyLabel="validate.php" index="2">
+<position info="not_deleted" x="59" y="0"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="2194" y="0"/>
+</item>
+<item historyLabel="submit.php" index="1">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="home.php" index="4">
+<position info="not_deleted" x="2194" y="0"/>
+</item>
+<item historyLabel="home.js" index="0">
+<position info="not_deleted" x="5610" y="0"/>
+</item>
+<item historyLabel="style.css" index="5">
+<position info="not_deleted" x="134" y="0"/>
+</item>
+<item historyLabel="serverScraper.php" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="serverScraper.php" index="7">
 <position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="246" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="307" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
+<item historyLabel="serverScraper.php" index="7">
 <position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
+<item historyLabel="serverScraper.php" index="7">
 <position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="493" y="0"/>
+<item historyLabel="serverScraper.php" index="7">
+<position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="484" y="0"/>
+<item historyLabel="serverScraper.php" index="7">
+<position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="733" y="0"/>
+<item historyLabel="serverScraper.php" index="7">
+<position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="731" y="0"/>
+<item historyLabel="serverScraper.php" index="7">
+<position/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="533" y="0"/>
+<item historyLabel="serverScraper.php" index="7">
+<position info="not_deleted" x="656" y="0"/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="560" y="0"/>
+<item historyLabel="scraper.php" index="8">
+<position info="not_deleted" x="524" y="42"/>
 </item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="584" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="823" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="790" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="822" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="867" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="924" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="509" y="0"/>
-</item>
-<item historyLabel="form.html" index="0">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="509" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="822" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="827" y="0"/>
-</item>
-<item historyLabel="formhandler.php" index="1">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item active="true" historyLabel="scraper.php" index="2">
-<position info="not_deleted" x="330" y="0"/>
+<item active="true" historyLabel="serverScraper.php" index="7">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -314,5 +475,51 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="scraper.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/scraper.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/scraper.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="serverScraper.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/serverScraper.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/serverScraper.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="loaddata.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/loaddata.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/loaddata.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="home.php" tooltip="/Applications/MAMP/htdocs/latebell/home.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/home.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="casexample.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/casexample.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/casexample.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="submit.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/submit.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/submit.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="example_html.php" tooltip="/Applications/MAMP/htdocs/latebell/CAS-1.3.2/CAS-1.3.2/docs/examples/example_html.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/CAS-1.3.2/CAS-1.3.2/docs/examples/example_html.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.html" name="home.html" tooltip="/Applications/MAMP/htdocs/latebell/home.html">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/home.html"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery.localscroll-1.2.7-min.js" tooltip="/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.localscroll-1.2.7-min.js">
+<persistable uri="file:/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.localscroll-1.2.7-min.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery.scrollTo-1.4.2-min.js" tooltip="/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.scrollTo-1.4.2-min.js">
+<persistable uri="file:/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.scrollTo-1.4.2-min.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="jquery.parallax-1.1.3.js" tooltip="/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.parallax-1.1.3.js">
+<persistable uri="file:/Users/Dale/Dropbox/Public/dales_website/scripts/jquery.parallax-1.1.3.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.js" name="formvalidation.js" tooltip="/Applications/MAMP/htdocs/latebell/scripts/formvalidation.js">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/formvalidation.js"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="makedatabase.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/makedatabase.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/makedatabase.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="phpjs.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/phpjs.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/phpjs.php"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="com.aptana.editor.php" name="castest.php" tooltip="/Applications/MAMP/htdocs/latebell/scripts/castest.php">
+<persistable uri="file:/Applications/MAMP/htdocs/latebell/scripts/castest.php"/>
+</file>
+</mruList>
 </workbench>

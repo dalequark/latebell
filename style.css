@@ -9,3 +9,7 @@ body {
 #banner{
 	margin-top: 20px;
 }
+
+#netid{
+	display: none;
+}

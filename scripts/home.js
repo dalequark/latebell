@@ -2,14 +2,12 @@
 var totalRows = 0;
 
 //test netid
-var netid;
-casLogin();
+var netid = document.getElementById('netid').innerHTML;
 
 //copy of each json string
 var jsonArray = new Array();
 //the current uniqueID selected for each table row
 var uniqueIDs = new Array();
-var uniqueIDs2 = new Array();
 
 //load saved user course data
 loadData(netid);
@@ -102,8 +100,13 @@ function tableMaker(id) {
 			attribute = document.createAttribute("onclick");
 			attribute.nodeValue = "remove(this)";
 			xButton.setAttributeNode(attribute);
+			
+			//set to utf8
+			attribute = document.createAttribute("charset");
+			attribute.nodeValue = "UTF-8";
+			xButton.setAttributeNode(attribute);
 
-			xButton.appendChild(document.createTextNode('x'));
+			xButton.appendChild(document.createTextNode('delete'));
 			td.appendChild(xButton);
 			tr.appendChild(td);
 			
@@ -184,24 +187,18 @@ function getEnrollments(obj) {
 
 	//set the uniqueID at index whichRow to the json.uniqueID.
 	uniqueIDs[whichRow] = jsonArray[whichRow].uniqueIDs[whichSelection];
-	alert(uniqueIDs[whichRow]);
 }
 
 function submit() {
-	var hasClass = false;
+	var uniqueIDs2 = new Array();
 	var j = 0;
 	for(var i = 0; i<uniqueIDs.length; i++){
 		if(uniqueIDs[i] != null){
-			hasClass = true;
 			uniqueIDs2[j] = uniqueIDs[i];
 			j++;
 		}
 	}
 	
-	if(!hasClass){
-		popMessage("No classes selected! :O");
-		return;
-	}
 	
 	$.post("scripts/submit.php", {
 		netid : netid,
@@ -293,7 +290,7 @@ function rowMaker(url) {
 		attribute.nodeValue = "remove(this)";
 		xButton.setAttributeNode(attribute);
 
-		xButton.appendChild(document.createTextNode('x'));
+		xButton.appendChild(document.createTextNode('delete'));
 
 		td.appendChild(xButton);
 
@@ -316,10 +313,3 @@ function remove(clss) {
 	
 }
 
-function casLogin(){
-	$.post("scripts/validate.php",
-	 function(data) {
-	 	netid = data;
-	 	document.getElementById('netid').innerHTML = netid;
-	 });
-}
