@@ -2,19 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="loaddata" key="selection"/>
+		<item value="tableMaker" key="selection"/>
 		<list key="findhistory">
+			<item value="tableMaker"/>
+			<item value="classname"/>
+			<item value="results"/>
 			<item value="loaddata"/>
-			<item value="alert"/>
-			<item value="var classID = document.getElementById(&apos;classID&apos;).value;&#x0A;&#x09;&#x09;document.getElementById(&apos;classID&apos;).value = &quot;&quot;;"/>
-			<item value="document.getelement"/>
-			<item value="getelement"/>
-			<item value="validate"/>
-			<item value="no classes"/>
-			<item value="uniqueids2"/>
+			<item value="rowmaker"/>
+			<item value="spinner"/>
+			<item value="loadData"/>
+			<item value="delete"/>
 		</list>
 	</section>
 </section>

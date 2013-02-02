@@ -1,3 +1,3 @@
-FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Sat Feb 02 03\:43\:32 EST 2013\n9\=onclick\n8\=jquery\n7\=uniqueids2\n6\=no classes\n5\=validate\n4\=getelement\n3\=document.getelement\n2\=var classID \\\= document.getElementById('classID').value;\\n\\t\\tdocument.getElementById('classID').value \\\= "";\n1\=alert\n0\=loaddata\n
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Sat Feb 02 14\:25\:34 EST 2013\n6\=loadData\n5\=spinner\n4\=rowmaker\n3\=loaddata\n2\=results\n1\=classname\n0\=tableMaker\n7\=delete\n
 FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Thu Jan 31 21\:04\:55 EST 2013\n0\=popMessage\n
 eclipse.preferences.version=1

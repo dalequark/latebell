@@ -42,6 +42,9 @@ while (($row = $results -> fetch_array()) != NULL) {
 		exit();
 	}
 
+	$className = $html -> find("h2",1) -> plaintext;
+	$className = substr($className,0,strpos($className, '\n') - 3);
+	echo $className;
 	$siteString = $html -> find('table', 0) -> plaintext;
 
 	$section = substr($uniqueID, 6);
@@ -68,13 +71,16 @@ while (($row = $results -> fetch_array()) != NULL) {
 
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
 			curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v2/class-hunter.mailgun.org/messages');
-			curl_setopt($ch, CURLOPT_POSTFIELDS, array('from' => 'ClassHunter <collin@class-hunter.mailgun.org>', 'to' => $uniqueID . '@princeton.edu', 'subject' => 'Class Captured -- Enroll Now!', 'text' => 'Good news! ' . $id . " has space for new enrollments. Don't miss your opportunity to sign up! Happy hunting,\n\n-PrincetonClassHunter.com"));
+			curl_setopt($ch, CURLOPT_POSTFIELDS, array('from' => 'ClassHunter <collin@class-hunter.mailgun.org>', 'to' => $id . '@princeton.edu', 'subject' => 'Class Captured -- Enroll Now!', 'text' => 'Good news! ' . $className . " has space for new enrollments. Don't miss your opportunity to sign up! Happy hunting,\n\n-PrincetonClassHunter.com"));
 
 			$result = curl_exec($ch);
 			curl_close($ch);
 
 			$query = "DELETE FROM assoc WHERE netid = '$id' AND uniqueid = '$uniqueID'";
-			$delete = $mysqli -> query($query);
+			$mysqli -> query($query);
+			
+			$query = "DELETE FROM uniqueids WHERE uniqueid = '$uniqueID'";
+			$mysqli -> query($query);
 		}
 	}
 }

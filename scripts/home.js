@@ -9,6 +9,7 @@ var jsonArray = new Array();
 //the current uniqueID selected for each table row
 var uniqueIDs = new Array();
 
+spin();
 //load saved user course data
 loadData(netid);
 
@@ -20,9 +21,11 @@ function tableMaker(id) {
 		//checks if classID is in database.
 		if (data == 0) {
 			popMessage("Could not find classID :(", 0);
+			spinner.stop();
 			return;
 		} else if (data == 1) {
 			popMessage("Could not reach Princeton Registrar : ( ", 1);
+			spinner.stop();
 			return;
 		}
 
@@ -40,6 +43,7 @@ function tableMaker(id) {
 
 		if (open) {
 			popMessage("Class is already open!");
+			spinner.stop();
 		} else if (!open) {
 			//add json to jsonArray[totalRows];
 
@@ -106,7 +110,7 @@ function tableMaker(id) {
 			attribute.nodeValue = "UTF-8";
 			xButton.setAttributeNode(attribute);
 
-			xButton.appendChild(document.createTextNode('delete'));
+			xButton.appendChild(document.createTextNode('x'));
 			td.appendChild(xButton);
 			tr.appendChild(td);
 			
@@ -116,6 +120,7 @@ function tableMaker(id) {
 			totalRows++;
 
 			popMessage("Class Added!", 2);
+				spinner.stop();
 		}
 	});
 }
@@ -138,6 +143,7 @@ $('#classID').keypress(function(event) {
 		if (!validateID(classID)) {
 			popMessage("Not a valid classID, you dolt!", 'error');
 		} else {
+			spin();
 			tableMaker(classID);
 		}
 	}
@@ -223,6 +229,9 @@ function loadData(netid) {
 				rowMaker(json.urls[i]);
 			}
 		}
+		else{
+			spinner.stop();
+		}
 	});
 }
 
@@ -290,12 +299,15 @@ function rowMaker(url) {
 		attribute.nodeValue = "remove(this)";
 		xButton.setAttributeNode(attribute);
 
-		xButton.appendChild(document.createTextNode('delete'));
+		xButton.appendChild(document.createTextNode('x'));
 
 		td.appendChild(xButton);
 
 		tr.appendChild(td);
 		var theTable = document.getElementById('classTable');
+		
+		spinner.stop();
+		
 		theTable.appendChild(tr);
 
 		totalRows++;
@@ -313,3 +325,25 @@ function remove(clss) {
 	
 }
 
+var spinner;
+function spin(){
+var opts = {
+  lines: 11, // The number of lines to draw
+  length: 7, // The length of each line
+  width: 3, // The line thickness
+  radius: 7, // The radius of the inner circle
+  corners: 1, // Corner roundness (0..1)
+  rotate: 0, // The rotation offset
+  color: '#000', // #rgb or #rrggbb
+  speed: 1, // Rounds per second
+  trail: 60, // Afterglow percentage
+  shadow: false, // Whether to render a shadow
+  hwaccel: false, // Whether to use hardware acceleration
+  className: 'spinner', // The CSS class to assign to the spinner
+  zIndex: 2e9, // The z-index (defaults to 2000000000)
+  top: 'auto', // Top position relative to parent in px
+  left: 'auto' // Left position relative to parent in px
+};
+var target = document.getElementById('spinner');
+spinner = new Spinner(opts).spin(target);
+}

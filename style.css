@@ -1,6 +1,16 @@
 body {
 	font-family:monospace;
+	color: #824227;
 }
+
+.hero-unit{
+	background: #F4E9A5;
+}
+
+.alert-info {
+	background: #B4E0E6;
+}
+
 #classID{
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -12,4 +22,21 @@ body {
 
 #netid{
 	display: none;
+}
+
+
+button{
+}
+
+#logout{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#submit{
+	margin-left:-10px;
+}
+
+#spinner{
+	margin-bottom: 15px;
 }
