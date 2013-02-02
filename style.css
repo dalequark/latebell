@@ -1,3 +1,11 @@
-#errormessage {
-	visibility: hidden;
+body {
+	font-family:monospace;
+}
+#classID{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#banner{
+	margin-top: 20px;
 }
